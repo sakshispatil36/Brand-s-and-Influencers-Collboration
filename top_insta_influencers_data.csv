@@ -1,0 +1,201 @@
+﻿rank,channel_info,influence_score,posts,followers,avg_likes,60_day_eng_rate,new_post_avg_like,total_likes,City,engagementRate
+1,Sakshi Kitchen,92,3.3k,1.3K,8.7m,1.39%,6.5m,29.0b,Pune,3.4
+2,Aman Verma,91,6.9k,2.7K,8.3m,1.62%,5.9m,57.4b,Mumbai,2.1
+3,Ritu Sharma,90,0.89k,4.5K,6.8m,1.24%,4.4m,6.0b,Delhi,4.8
+4,Sneha Foodie,93,1.8k,8.9K,6.2m,0.97%,3.3m,11.5b,Bangalore,1.9
+5,Rahul Techie,91,6.8k,11.2K,1.9m,0.20%,665.3k,12.5b,Hyderabad,5.2
+6,Neha Kapoor,91,5.6k,15.4K,3.5m,0.88%,2.9m,19.9b,Chennai,2.7
+7,Ankit Travels,92,5.0k,19.8K,3.7m,1.20%,3.9m,18.4b,Kolkata,3.9
+8,Priya Singh,92,2.0k,22.3K,3.6m,0.76%,2.0m,7.4b,Ahmedabad,4.1
+9,Meera Fashion,89,4.1k,26.7K,2.4m,0.35%,926.9k,9.8b,Jaipur,1.5
+10,Sunil Food Trails,91,7.4k,30.5K,1.9m,0.59%,1.5m,13.9b,Surat,2.3
+11,Shivam Photography,90,0.66k,34.2K,5.5m,2.04%,5.1m,3.7b,Indore,3.6
+12,Ankita Creations,91,10.0k,38.9K,302.2k,0.07%,159.3k,3.0b,Bhopal,4.4
+13,Ravindra Fitness,90,0.95k,41.2K,329.0k,0.08%,181.8k,313.6m,Coimbatore,2.8
+14,Nisha Wanderlust,91,0.53k,47.8K,2.4m,1.01%,2.3m,1.3b,Visakhapatnam,1.7
+15,Aditya Codes,89,3.2k,49.9K,1.7m,0.62%,1.4m,5.3b,Nagpur,5.6
+16,Megha Beauty,87,1.4k,1.0K,3.5m,0.96%,2.0m,4.9b,Kochi,3.1
+17,Arjun Sports,90,6.4k,5.4K,2.1m,0.53%,1.0m,13.5b,Lucknow,2.4
+18,Tanvi Lifestyle,89,4.4k,8.7K,1.8m,0.67%,1.3m,7.7b,Chandigarh,4.9
+19,Vikas Vlogs,89,1.2k,2.3K,1.3m,0.51%,913.6k,1.6b,Gurugram,1.3
+20,Isha Wellness,90,5.3k,6.7K,2.7m,1.09%,1.9m,14.1b,Noida,2.6
+21,Karan Stories,92,2.0k,9.1K,715.0k,0.16%,265.1k,1.5b,Varanasi,3.8
+22,Pooja Crafts,88,8.2k,14.5K,522.0k,0.08%,115.2k,4.3b,Patna,5.1
+23,Rohit Gamer,87,3.5k,18.7K,5.8m,3.17%,4.8m,20.6b,Ranchi,2.2
+24,Simran Recipes,75,1.6k,21.9K,3.1m,1.10%,1.5m,5.0b,Raipur,4
+25,Deepak Digital,88,0.08k,25.4K,1.1m,0.27%,363.4k,91.3m,Kanpur,1.8
+26,Anjali Styles,88,4.8k,29.8K,3.7m,0.02%,0,17.9b,Agra,3.3
+27,Manish Explorer,86,2.3k,33.4K,2.1m,0.92%,1.2m,4.9b,Amritsar,2.9
+28,Shruti Diaries,87,10.0k,37.1K,420.5k,0.07%,81.7k,4.2b,Ludhiana,4.6
+29,Tanya Fitness,90,6.9k,40.9K,996.2k,0.48%,588.3k,6.8b,Jodhpur,5.4
+30,Pranav Makeup,85,5.2k,44.3K,1.7m,1.10%,1.3m,9.0b,Udaipur,1.6
+31,Manu Travel Blog,86,7.3k,12.0K,463.2k,0.22%,255.9k,3.4b,Gwalior,2.5
+32,Rhea Lifestyle,90,10.0k,16.5K,1.2m,0.64%,706.3k,11.6b,Jabalpur,3.7
+33,Kajal Designs,73,0.69k,20.9K,8.5m,5.02%,5.2m,5.9b,Nashik,4.3
+34,Sameer Music,74,1.3k,24.8K,2.1m,1.26%,1.1m,2.6b,Aurangabad,1.4
+35,Arpita Books,85,1.7k,28.7K,1.4m,0.69%,586.5k,2.3b,Thane,5.8
+36,Naveen Food Blog,88,1.8k,32.6K,1.4m,0.60%,482.3k,2.5b,Mysuru,2
+37,Neel Creative,88,3.6k,36.5K,1.2m,1.53%,1.2m,4.2b,Mangaluru,3
+38,Dia Kitchen,85,3.6k,40.4K,1.6m,1.00%,802.9k,5.6b,Vijayawada,4.7
+39,Yash Creator,70,0.87k,44.2K,5.8m,9.00%,7.2m,5.1b,Madurai,1.2
+40,Kriti Street Style,88,2.0k,48.1K,975.1k,0.41%,304.7k,1.9b,Tirupati,2.9
+41,Sahil Adventures,86,10.0k,5.1K,203.7k,0.17%,125.8k,2.0b,Vadodara,3.5
+42,Amrita DIY,85,3.3k,8.4K,2.5m,2.56%,1.9m,8.2b,Rajkot,4.2
+43,Kiran Tech World,86,1.5k,17.6K,1.2m,0.46%,340.9k,1.9b,Srinagar,2.6
+44,Varun Fashion Hub,81,1.9k,21.4K,1.6m,1.17%,859.9k,3.0b,Dehradun,1.9
+45,Ranjit Health Coach,88,2.9k,25.9K,147.0k,0.04%,29.8k,423.5m,Shimla,5
+46,Alok Photography,86,1.2k,29.8K,2.5m,2.16%,1.6m,2.8b,Panaji,3.2
+47,Bina Recipes,84,2.3k,33.2K,1.5m,0.54%,370.1k,3.5b,Silchar,2.1
+48,Pratik Grooming,87,12.9k,37.8K,370.8k,0.28%,196.9k,4.8b,Shillong,4.5
+49,Tarun Tools,83,2.5k,42.1K,3.5m,2.87%,2.0m,8.8b,Imphal,1.7
+50,Richa Vibes,76,0.86k,46.7K,5.1m,8.36%,5.7m,4.4b,Aizawl,2.8
+51,Vikram Culture,85,0.54k,1.5K,2.9m,3.01%,2.0m,1.6b,Itanagar,3.9
+52,Anju Beauty Blog,82,1.8k,3.2K,1.8m,3.14%,2.1m,3.3b,Gangtok,5.3
+53,Harsh Travel Vibes,83,0.26k,7.6K,1.6m,2.23%,1.5m,419.0m,Bhavnagar,2.4
+54,Saketh Fit Life,77,1.2k,8.9K,5.4m,10.83%,7.3m,6.6b,Kota,4.1
+55,Radhika Style,78,2.9k,13.4K,872.9k,0.49%,325.7k,2.6b,Aligarh,1.6
+56,Gaurav Plays,87,0.34k,17.8K,1.9m,0.01%,0,639.0m,Bareilly,3.4
+57,Sonia Homemade,78,1.2k,21.9K,4.1m,5.40%,3.6m,4.9b,Meerut,2.7
+58,Arav Food Journal,85,1.0k,26.0K,1.7m,2.25%,1.5m,1.7b,Moradabad,4.8
+59,Neetu Bakes,82,7.0k,30.1K,332.3k,0.51%,339.0k,2.3b,Ghaziabad,5.5
+60,Jayant Tech Guide,87,0.78k,34.5K,600.4k,0.30%,189.4k,470.7m,Faridabad,1.5
+61,Sanya Life Hacks,77,2.9k,38.9K,1.9m,2.19%,1.4m,5.4b,Hisar,2.3
+62,Mohit Studio,82,1.4k,42.0K,1.4m,0.02%,0,1.9b,Rohtak,3.6
+63,Poonam Arts,83,17.5k,45.5K,386.9k,0.58%,366.6k,6.8b,Hubli,4.4
+64,Rajat Cuisine,82,5.1k,49.0K,855.5k,0.69%,426.2k,4.4b,Belagavi,1.8
+65,Shruti Fitness Corner,82,0.83k,2.7K,4.5m,9.43%,5.9m,3.8b,Solapur,5.7
+66,Tanuja Portraits,84,8.2k,6.4K,1.2m,1.12%,696.3k,9.8b,Kolhapur,2.2
+67,Ritesh Travel Diaries,85,1.9k,9.8K,1.5m,1.01%,624.9k,2.9b,Satara,3.1
+68,Divya Home Style,85,2.4k,12.3K,1.1m,1.15%,718.8k,2.8b,Warangal,4.9
+69,Mayank Creative,86,10.0k,16.7K,500.5k,0.52%,322.2k,5.0b,Nellore,1.4
+70,Nidhi Vlogs,82,0.82k,20.9K,4.6m,9.72%,6.0m,3.8b,Kakinada,2.5
+71,Rohan Shares,85,9.9k,25.2K,381.8k,0.41%,241.6k,3.8b,Trichy,3.7
+72,Ankur Gadgets,85,1.2k,29.6K,1.9m,2.34%,1.4m,2.2b,Salem,4
+73,Kanika Cooks,79,2.7k,33.8K,1.6m,0.58%,323.1k,4.4b,Erode,2.9
+74,Bhavesh Fitness,86,10.0k,37.9K,672.6k,0.44%,248.6k,6.7b,Dhanbad,1.3
+75,Meena Saffron,86,2.7k,41.2K,690.9k,0.78%,448.3k,1.9b,Jamshedpur,5.9
+76,Vikki Fashion Gram,80,0.28k,44.8K,4.0m,8.63%,5.0m,1.1b,Asansol,3.8
+77,Shivangi Stories,42,2.0k,48.5K,878.5k,1.62%,918.9k,1.8b,Howrah,2.6
+78,Priyank Designs,86,0.88k,5.2K,2.8m,3.69%,2.1m,2.5b,Bilaspur,4.2
+79,Mansi Makeup Art,83,3.3k,8.9K,3.1m,10.25%,5.7m,10.1b,Ujjain,1.1
+80,Koushik Food Walks,80,1.3k,13.4K,1.4m,0.85%,462.6k,1.8b,Ratlam,2.7
+81,Suhana Trips,86,0.87k,17.8K,1.5m,1.53%,837.1k,1.3b,Haridwar,3.2
+82,Atul Photo Blog,86,1.7k,22.3K,395.5k,0.20%,107.6k,669.3m,Rishikesh,5
+83,Savita Recipes,87,10.0k,26.7K,194.8k,0.25%,135.5k,1.9b,Kozhikode,2.8
+84,Aditi Tech Corner,86,0.66k,30.9K,2.3m,8.18%,4.4m,1.5b,Thrissur,4.3
+85,Yogesh Health Coach,79,3.2k,35.2K,1.1m,2.06%,1.1m,3.6b,Palakkad,1.9
+86,Nayanika Fashion,86,5.6k,39.5K,959.8k,0.51%,266.5k,5.4b,Jammu,3.5
+87,Suman Home Ideas,76,1.2k,43.8K,1.4m,1.33%,693.9k,1.6b,Pathankot,2
+88,Raj Bakery,86,0.42k,47.0K,3.0m,2.05%,1.1m,1.3b,Haldwani,4.6
+89,Meenal Creations,84,4.6k,49.9K,764.0k,0.57%,301.3k,3.5b,Rewa,5.2
+90,Kalyan Fit Life,83,3.6k,3.1K,1.4m,1.02%,531.6k,5.1b,Siliguri,1.8
+91,Prerna Style Book,74,2.1k,7.2K,1.6m,1.85%,971.7k,3.4b,Darjeeling,2.4
+92,Rohini Mom Life,87,2.2k,11.5K,1.1m,1.06%,557.9k,2.5b,Bikaner,3.9
+93,Tejashwi Music,87,10.0k,15.8K,878.0k,0.66%,340.5k,8.8b,Ajmer,4.7
+94,Sudhir Cookery,22,0.84k,20.2K,1.8m,2.18%,1.1m,1.5b,Gandhinagar,1.6
+95,Pranita Wellbeing,85,10.0k,24.5K,147.3k,0.11%,56.3k,1.5b,Porbandar,5.4
+96,Tarika Photos,79,10.3k,28.8K,863.2k,1.52%,774.2k,8.9b,Anand,2.3
+97,Kirti Fashion Hub,82,2.4k,33.2K,186.4k,0.04%,16.8k,453.6m,Karnal,3.3
+98,Manoj Tasty Treats,84,0.42k,37.6K,4.7m,3.82%,1.9m,2.0b,Ambala,4.1
+99,Seema Plant Life,85,0.60k,41.8K,700.5k,1.22%,611.2k,421.7m,Tirunelveli,1.7
+100,Divyansh Gadgets,76,2.7k,46.2K,897.2k,1.21%,604.4k,2.4b,Guntur,2.9
+101,Isha Talks,86,1.1k,49.7K,1.4m,0.75%,363.9k,1.5b,Kurnool,3.8
+102,Abhishek Shares,80,6.4k,6.0K,356.8k,0.91%,452.9k,2.3b,Puducherry,4.5
+103,Sakina Creative,83,0.06k,9.4K,15.4m,25.80%,12.6m,987.4m,,2.2
+104,Mukul Kitchen,81,2.5k,13.8K,2.4m,3.55%,1.7m,6.1b,United States,1.5
+105,Kunal Codes,80,0.15k,18.2K,4.2m,3.28%,1.6m,654.4m,,5.6
+106,Monica Art Corner,86,8.9k,22.6K,115.1k,0.15%,72.4k,1.0b,Italy,3
+107,Pooja Travel Notes,84,6.5k,27.0K,372.4k,0.27%,131.8k,2.4b,Indonesia,2.7
+108,Alok Style File,82,6.5k,31.4K,127.5k,0.08%,40.5k,824.0m,France,4.8
+109,Rebeca Bakes,85,1.3k,35.8K,1.8m,2.88%,1.4m,2.3b,,1.4
+110,Amit Fitness Journey,85,1.4k,40.1K,2.1m,2.77%,1.3m,3.0b,,2.6
+111,Sameera Sun,85,0.17k,44.5K,1.6m,1.75%,841.4k,283.0m,United States,3.1
+112,Vijay Photo Story,86,0.98k,48.9K,763.0k,1.43%,681.3k,753.1m,,5.1
+113,Neelam Crafts,85,3.5k,53.0K,452.6k,0.41%,189.6k,1.6b,,2.5
+114,Rajeev Fan Club,81,2.3k,61.0K,728.2k,0.29%,133.0k,1.7b,United Arab Emirates,4.2
+115,Suhani Nature,57,0.59k,67.0K,4.7m,6.38%,2.9m,2.8b,United States,1.8
+116,Kiran Blogger,85,2.1k,72.0K,2.0m,3.47%,1.6m,4.2b,,3.6
+117,Vaidehi Makeup,84,4.2k,78.0K,633.9k,0.63%,292.9k,2.7b,United States,2.9
+118,Priyush Tech,85,10.0k,83.0K,157.0k,0.03%,12.4k,1.6b,United States,4.4
+119,Divya Food Love,82,0.16k,89.0K,4.7m,8.81%,4.0m,773.5m,United States,5.3
+120,Nilesh Sports,85,5.2k,95.0K,579.6k,0.57%,259.4k,3.0b,Brazil,1.7
+121,Saloni Vibes,78,3.2k,56.0K,3.0m,5.71%,2.6m,9.6b,United States,2.8
+122,Lokesh Adventures,82,3.2k,64.0K,1.1m,0.69%,311.5k,3.5b,United States,3.4
+123,Surbhi Style,80,0.02k,71.0K,652.5k,1.00%,455.3k,18.3m,Puerto Rico,4.9
+124,Chetan Recipes,82,16.9k,76.0K,189.9k,0.12%,52.8k,3.2b,United States,1.2
+125,Lakshmi Health,85,1.8k,82.0K,431.2k,0.44%,199.8k,784.0m,United States,5
+126,Arhaan Creates,84,1.1k,88.0K,1.1m,2.76%,1.2m,1.2b,,2.1
+127,Tisha Blogs,86,0.68k,94.0K,1.4m,2.61%,1.2m,925.7m,,3.7
+128,Bala Photography,42,1.5k,59.0K,553.0k,0.67%,294.1k,820.1m,Brazil,4.3
+129,Esha Crafts,85,0.97k,66.0K,801.8k,0.96%,414.8k,782.5m,,1.6
+130,Guru Food Lab,76,4.9k,73.0K,475.1k,0.71%,303.9k,2.3b,Brazil,2.4
+131,Mala Wellness,84,1.6k,79.0K,1.3m,2.18%,944.3k,2.2b,,3.5
+132,Varsha Travel Diary,84,1.9k,85.0K,1.1m,1.48%,640.5k,2.0b,India,4.6
+133,Paarth Gaming,85,0.58k,91.0K,1.6m,3.82%,1.6m,949.9m,CÃ´te d'Ivoire,2.3
+134,Sana Chai Stories,81,10.0k,97.0K,381.6k,0.33%,139.3k,3.8b,Colombia,1.9
+135,Hitesh Techie,85,8.9k,54.0K,65.1k,0.02%,7.7k,580.7m,Spain,5.8
+136,Ritu Culinary,84,3.0k,62.0K,969.7k,1.05%,444.2k,2.9b,United States,3.2
+137,Pranay Designs,86,4.4k,69.0K,790.2k,0.43%,181.0k,3.5b,United States,2
+138,Ishani Style,83,0.95k,74.0K,736.4k,1.49%,624.5k,710.7m,,4.7
+139,Krunal Shares,83,0.01k,80.0K,3.7m,13.09%,5.4m,67.5m,,1.5
+140,Mehul Fitness,80,3.0k,86.0K,513.1k,0.55%,221.7k,1.6b,Turkey,2.7
+141,Shraddha Home,83,0.02k,92.0K,14.2m,26.41%,11.0m,368.1m,,3.9
+142,Sunil Kitchen Stories,73,1.4k,99.0K,1.0m,1.98%,818.6k,1.5b,Brazil,5.2
+143,Kritika Travel,83,1.7k,120K,1.4m,1.76%,727.5k,2.3b,Anguilla,2.6
+144,Naman Photography,83,0.67k,185K,1.1m,3.97%,1.6m,767.0m,,4
+145,Jaya Beauty,85,9.7k,240K,88.8k,0.16%,63.6k,863.0m,,1.3
+146,Siddharth Life,85,1.8k,310K,1.0m,0.76%,299.3k,1.8b,Switzerland,3.8
+147,Meera Creative,81,2.1k,420K,586.4k,0.01%,0,1.2b,Brazil,2.4
+148,Vimal Posts,85,0.09k,560K,4.6m,1.88%,731.0k,452.0m,,4.5
+149,Anjali Shots,85,0.30k,720K,3.1m,2.49%,994.4k,957.9m,,5.1
+150,Dhruv Foods,85,2.0k,880K,250.8k,0.41%,161.7k,500.5m,Spain,1.6
+151,Rupal Crafts,81,4.5k,150K,118.3k,0.22%,87.4k,529.9m,Indonesia,2.9
+152,Ashok Blogger,75,10.0k,275K,346.7k,0.42%,162.9k,3.5b,United Kingdom,3.3
+153,Preeti Recipes,80,2.3k,390K,715.5k,0.46%,181.1k,1.7b,United States,4.1
+154,Aman Sports,78,11.6k,510K,157.4k,0.23%,84.4k,1.8b,United States,1.8
+155,Neha Daily,84,1.2k,630K,486.5k,0.59%,227.7k,563.9m,,5.7
+156,Ranveer Art,58,0.10k,760K,4.1m,0.17%,0,439.4m,,2.2
+157,Tanmay Music,74,0.73k,910K,2.2m,8.56%,3.3m,1.6b,,3.6
+158,Priya Street Food,80,1.8k,130K,815.8k,1.01%,383.3k,1.4b,,4.9
+159,Nidhi Fitness,79,5.1k,220K,623.1k,0.43%,162.1k,3.2b,United States,1.4
+160,Saurabh Tech,75,13.4k,340K,139.3k,0.13%,49.1k,1.9b,Indonesia,2.5
+161,Isha Kitchen,80,0.50k,480K,398.7k,0.31%,115.7k,199.8m,United States,3.7
+162,Nikita Vlogs,83,7.3k,600K,88.4k,0.06%,22.4k,644.1m,Sweden,4.2
+163,Aradhya Mom Life,85,5.3k,820K,695.4k,1.75%,658.3k,3.7b,,2.1
+164,Vivek Photos,84,0.73k,950K,813.5k,1.00%,363.8k,594.7m,,1.7
+165,Sonal Designs,83,2.7k,110K,594.2k,1.58%,555.9k,1.6b,,5.4
+166,Yuvraj Culture,80,8.9k,260K,256.1k,0.02%,0,2.3b,,3
+167,Shruti Treats,84,1.3k,370K,505.7k,0.68%,246.9k,672.1m,,2.8
+168,Rajeev Creations,83,0.11k,540K,10.9m,NaN%,0,1.2b,,4.6
+169,Anjali Fashion,76,0.38k,680K,172.8k,0.12%,43.4k,66.7m,Indonesia,1.9
+170,Meenakshi Sweets,83,0.87k,890K,1.1m,0.57%,203.6k,955.4m,France,2.3
+171,Tanya Adventure,85,9.9k,1.2M,150.5k,0.10%,33.4k,1.5b,,3.4
+172,Komal Beauty,84,0.66k,1.4M,1.1m,2.69%,962.7k,730.1m,United States,5.5
+173,Arun Travels,77,10.0k,1.7M,197.9k,0.18%,64.6k,2.0b,British Virgin Islands,2.7
+174,Richa Daily Life,81,1.2k,2.1M,2.2m,2.34%,834.5k,2.6b,,4.3
+175,Vikram Tech World,47,0.03k,2.6M,518.1k,0.80%,285.9k,18.7m,Czech Republic,1.5
+176,Samiksha Food,82,1.1k,3.2M,1.3m,2.54%,780.0k,1.5b,,3.9
+177,Naman Travel Bug,83,2.1k,3.8M,1.1m,1.20%,422.9k,2.2b,India,2
+178,Ritu Artistry,78,0.59k,4.2M,2.6m,5.23%,1.8m,1.6b,Mexico,4.8
+179,Sandeep Gardens,81,0.66k,4.8M,1.1m,1.19%,411.5k,739.5m,United States,5.6
+180,Priyanka Wellness,76,1.0k,61K,800.4k,2.03%,664.5k,810.0m,,1.2
+181,Gauri Bakes,72,4.4k,73K,420.0k,0.65%,222.9k,1.9b,Brazil,2.6
+182,Yashika Style,84,7.6k,82K,226.4k,0.36%,121.1k,1.7b,Brazil,3.8
+183,Rohit Wanderer,83,4.1k,91K,145.4k,0.17%,58.6k,589.6m,,4.4
+184,Ananya Beauty,83,0.94k,20K,597.2k,1.68%,533.5k,561.3m,,1.6
+185,Kartik Fitness,68,1.9k,32K,1.5m,3.49%,1.2m,2.8b,Mexico,5.9
+186,Simran Lifestyle,84,4.6k,45K,367.8k,0.57%,192.3k,1.7b,,2.4
+187,Vansh Tech Guru,80,0.11k,56K,3.1m,0.02%,0,350.9m,United States,3.1
+188,Ira Kitchen Diaries,83,0.15k,70K,136.2k,0.20%,66.8k,21.2m,,4.7
+189,Harleen Crafts,77,7.3k,88K,185.2k,0.44%,132.0k,1.4b,United States,1.3
+190,Dev Food Lover,83,6.3k,93K,732.4k,0.73%,247.5k,4.6b,United States,2.8
+191,Manav Travel Hub,79,9.3k,100K,231.3k,0.23%,76.5k,2.2b,Germany,3.2
+192,Shalini Style Studio,84,1.4k,1M,2.0m,3.58%,1.2m,2.8b,Canada,4.9
+193,Arpit Music Beats,63,4.5k,50M,685.1k,0.67%,220.7k,3.1b,Russia,2.5
+194,Pallavi Wellness,41,0.37k,5M,1.1m,1.61%,532.7k,391.9m,France,1.8
+195,Raghav Fitness Pro,75,4.8k,20M,264.7k,0.63%,209.2k,1.3b,India,5.3
+196,Riya Sharma,71,2.3k,30M,623.8k,1.40%,464.7k,1.4b,United States,3.5
+197,Sakshi,81,3.8k,10M,390.4k,0.64%,208.0k,1.5b,France,2.2
+198,Rahul Techie,79,0.77k,9M,193.3k,0.26%,82.6k,149.2m,Brazil,4
+199,Vaishnavi,78,2.3k,40M,719.6k,1.42%,467.7k,1.7b,United States,1.7
+200,Saloni Vibes,80,4.2k,33M,232.2k,0.30%,97.4k,969.1m,Indonesia,2.6
