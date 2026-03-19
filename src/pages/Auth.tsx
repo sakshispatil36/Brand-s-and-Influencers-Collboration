@@ -42,6 +42,8 @@ const Auth = () => {
     fullName: "",
     userType: "brand" as "brand" | "influencer",
     companyName: "",
+    profileUrl: "",
+    category: "",
   });
 
   const navigate = useNavigate();
@@ -173,6 +175,17 @@ const Auth = () => {
         user_type: signupData.userType,
         company_name: signupData.companyName || "",
         email: signupData.email,
+
+         // 🔥 IF INFLUENCER
+      ...(signupData.userType === "influencer" && {
+        profileUrl: signupData.profileUrl,
+        category: signupData.category,
+
+        // TEMP VALUES (you can later auto-fetch)
+        profile_image_url: "https://via.placeholder.com/50",
+        followers: Math.floor(Math.random() * 100000),
+        engagementRate: Number((Math.random() * 10).toFixed(2)),
+      }),
       });
     } catch (err) {
       if (err instanceof Error) {
@@ -383,6 +396,31 @@ const Auth = () => {
                       <option value="influencer">Influencer</option>
                     </select>
                   </div>
+                  {signupData.userType === "influencer" && (
+                  <>
+                    <div className="space-y-2">
+                      <Label>YouTube Channel URL</Label>
+                      <Input
+                        placeholder="https://www.youtube.com/channel/..."
+                        value={signupData.profileUrl}
+                        onChange={(e) =>
+                          setSignupData({ ...signupData, profileUrl: e.target.value })
+                        }
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label>Category</Label>
+                      <Input
+                        placeholder="beauty, fitness, tech..."
+                        value={signupData.category}
+                        onChange={(e) =>
+                          setSignupData({ ...signupData, category: e.target.value })
+                        }
+                      />
+                    </div>
+                  </>
+                )}
 
                   {signupData.userType === "brand" && (
                     <div className="space-y-2">

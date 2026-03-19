@@ -16,4 +16,7 @@ export interface Influencer {
   suspicious?: boolean;
   status?: "Trusted" | "Normal" | "Suspicious";
   matchScore?: number;
+
+   image?: string;
+   profileUrl?: string;
 }

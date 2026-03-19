@@ -9,9 +9,6 @@ import {
   doc,
   getCountFromServer,
   getDoc,
-  orderBy,
-  limit
-  //orderBy
 } from "firebase/firestore";
 import {
   Card,
@@ -29,7 +26,6 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import DashboardSidebar from "./DashboardSidebar";
 import { useToast } from "@/hooks/use-toast";
 import ProfileSettings from "./ProfileSettings";
-// import { getRecommendedInfluencers } from "../../services/recommendationservice";
 import { Influencer } from "../../types/influencer";
 import {
   LineChart,
@@ -42,7 +38,6 @@ import {
   CartesianGrid,
   ResponsiveContainer
 } from "recharts";
-import { calculateCredibility } from "@/services/credibilityService";
 
 /* ===================== TYPES ===================== */
 
@@ -97,7 +92,9 @@ const BrandDashboard = () => {
       { name: "Suspicious", value: suspiciousCount },
     ];
     const [averageEngagement, setAverageEngagement] = useState(0);
-      const { toast } = useToast();
+    const [nextPageToken, setNextPageToken] = useState<string | null>(null);
+    const [loading, setLoading] = useState(false);
+    const { toast } = useToast();
 
   /* ===================== FETCH DATA ===================== */
 
@@ -279,63 +276,43 @@ useEffect(() => {
 }, [activeTab]);
 
 const loadCampaignRecommendations = async () => {
-  if (!selectedCampaign) {
-    toast({
-      title: "Select Campaign",
-      description: "Please select a campaign first",
-    });
-    return;
-  }
+  if (!selectedCampaign) return;
 
   const campaignSnap = await getDoc(doc(db, "campaigns", selectedCampaign));
   if (!campaignSnap.exists()) return;
 
-  const campaignData = campaignSnap.data();
-  const category = campaignData.category;
+  const category = campaignSnap.data().category || "fitness";
 
-  if (!category) {
-    toast({
-      title: "No Category Found",
-      description: "This campaign has no category",
-    });
-    return;
-  }
+  setLoading(true);
 
-  const q = query(
-    collection(db, "influencers"),
-    where("category", "array-contains", category),
-    orderBy("followers", "desc"),
-    limit(20)
+  const response = await fetch(
+    `http://localhost:5000/api/influencers/recommend?category=${category}${
+      nextPageToken ? `&pageToken=${nextPageToken}` : ""
+    }`
   );
 
-  const snapshot = await getDocs(q);
+  const data = await response.json();
 
-const influencers: Influencer[] = snapshot.docs.map((docSnap) => {
-  const data = docSnap.data();
- console.log("Full Data:", data); // 👈 ADD THIS
-  console.log("Engagement:", data.engagementRate); // 👈 ADD THIS
+  setRecommendedInfluencers(prev => [...prev, ...data.influencers]);
+  setNextPageToken(data.nextPageToken);
 
-  const followersValue = Number(data.followers ?? 0);
-  const engagement = Number(data.engagementRate ?? 0);
-
-  const credibility = calculateCredibility(followersValue);
-
-  return {
-    id: docSnap.id,
-    name: data.name || "Unknown",
-    followers: followersValue,
-    followersCount: followersValue.toString(),
-    category: data.category || [],
-    location: data.City || "India",
-    engagementRate: engagement,
-    status: credibility.status,
-    credibilityScore: credibility.credibilityScore,
-    suspicious: credibility.suspicious,
-    matchScore: 0,
-  };
-});
-  setRecommendedInfluencers(influencers);
+  setLoading(false);
 };
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 &&
+      !loading &&
+      nextPageToken
+    ) {
+      loadCampaignRecommendations();
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [nextPageToken]);
 
 const formatFollowers = (num: number) => {
   if (num >= 1000000) {
@@ -346,7 +323,6 @@ const formatFollowers = (num: number) => {
   }
   return num.toString();
 };
-
 
 
  return (
@@ -427,7 +403,7 @@ const formatFollowers = (num: number) => {
               </>
             )}
 {activeTab === "campaigns" && (
-              <div className="space-y-4">
+              <div className="space-y-10">
                 {campaigns.length === 0 ? (
                   <Card className="bg-card border-border">
                     <CardContent className="pt-6 pb-6 flex flex-col items-center gap-4">
@@ -522,14 +498,26 @@ const formatFollowers = (num: number) => {
                     ))}
                   </>
                 )}
-              </div>
-            )}
-            {recommendedInfluencers.length > 0 && (
+                {recommendedInfluencers.length > 0 && (
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-6">
               {recommendedInfluencers.map((inf) => (
                 <Card key={inf.id}>
                   <CardContent className="p-4">
-                    <p className="font-medium">{inf.name}</p>
+                    <div className="flex items-center gap-3 mb-2">
+                    <img
+                      src={inf.image}
+                      alt={inf.name}
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
+
+                    <a
+                      href={inf.profileUrl}
+                      target="_blank"
+                      className="font-medium text-blue-600 hover:underline"
+                    >
+                      {inf.name}
+                    </a>
+                  </div>
                     <p className="text-sm text-muted-foreground">
                       Followers: {formatFollowers(inf.followers)}
                     </p>
@@ -561,82 +549,13 @@ const formatFollowers = (num: number) => {
               ))}
             </div>
           )}
+              </div>
+            )}
+            
 
             {activeTab === "influencers" && (
             <>
-              {/* Top bar */}
-              {/* <div className="flex justify-between items-center mb-4">
-                <Button onClick={() => setShowSearch(true)}>
-                  Show Recommended Influencers
-                </Button>
-              </div>
-
-              {/* Search section 
-              {showSearch && (
-                <div className="flex gap-2 mb-6">
-                  <input
-                    type="text"
-                    placeholder="Enter category (food, fitness, fashion...)"
-                    value={searchCategory}
-                    onChange={(e) => setSearchCategory(e.target.value)}
-                    className="border px-3 py-2 rounded w-64"
-                  />
-
-                  <Button onClick={loadRecommendations}>
-                    Search
-                  </Button>
-                </div>
-              )}  */}
-
-              {/* Recommended influencers (NOW correctly positioned) */}
-              {/* {recommended.length > 0 && (
-                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-6">
-                  {recommended.map((inf) => (
-                    <Card key={inf.id} className="bg-card border-border">
-                      <CardHeader>
-                        <CardTitle>{inf.name}</CardTitle>
-                        <CardDescription>{inf.category}</CardDescription>
-                      </CardHeader>
-
-                      <CardContent className="space-y-2">
-                        <p className="text-sm text-muted-foreground">
-                          Followers: {inf.followersCount}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          Engagement Rate: {inf.engagementRate}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          Location: {inf.location}
-                        </p>
-
-                        <p className="text-sm text-muted-foreground">
-                        Credibility Score: {inf.credibilityScore}/100
-                      </p>
-
-                    {inf.status === "Trusted" && (
-                      <span className="inline-block mt-2 px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-700">
-                        🟢 Trusted Influencer
-                      </span>
-                    )}
-
-                    {inf.status === "Normal" && (
-                      <span className="inline-block mt-2 px-3 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-700">
-                        🟡 Normal Influencer
-                      </span>
-                    )}
-
-                    {inf.status === "Suspicious" && (
-                      <span className="inline-block mt-2 px-3 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-700">
-                        🔴 Suspicious Account
-                      </span>
-                    )}
-                    </CardContent>
-                    </Card>
-                    
-                  ))}
-                </div>
-              )} */}
-
+          
               {/* Existing influencer list */}
               {influencers.length === 0 ? (
                 <Card className="bg-card border-border">
@@ -674,42 +593,7 @@ const formatFollowers = (num: number) => {
               )}
             </>
           )}
-            {/* {activeTab === "analytics" && (
-  <div className="space-y-6">
-
-    {/* Application Breakdown 
-    <Card>
-      <CardHeader>
-        <CardTitle>Application Status Breakdown</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-2">
-        <p>🟡 Pending: {pendingCount}</p>
-        <p>🟢 Approved: {approvedCount}</p>
-        <p>🔴 Rejected: {rejectedCount}</p>
-      </CardContent>
-    </Card>
-
-    {/* Influencer Credibility Summary 
-    <Card>
-      <CardHeader>
-        <CardTitle>Influencer Credibility Summary</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-2">
-        <p>🟢 Trusted Influencers: {trustedCount}</p>
-        <p>🟡 Normal Influencers: {normalCount}</p>
-        <p>🔴 Suspicious Influencers: {suspiciousCount}</p>
-      </CardContent>
-    </Card>
-
-    {/* Engagement Insights 
-    <Card>
-      <CardHeader>
-        <CardTitle>Engagement Insights</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p>📊 Average Engagement Rate: {averageEngagement}%</p>
-      </CardContent>
-    </Card> */}
+           
 
 {activeTab === "analytics" && (
   <div className="space-y-6">

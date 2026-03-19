@@ -20,7 +20,7 @@ const DashboardSidebar = ({userType,activeTab,onTabChange,}: DashboardSidebarPro
 
   const brandItems = [
     { id: "dashboard", title: "Dashboard", icon: LayoutDashboard },
-    { id: "campaigns", title: "My Campaigns", icon: Briefcase }, // ✅ ID FIXED
+    { id: "campaigns", title: "My Campaigns", icon: Briefcase }, 
     { id: "influencers", title: "Influencers", icon: Users },
     { id: "analytics", title: "Analytics", icon: TrendingUp },
     { id: "settings", title: "Settings", icon: Settings },
@@ -33,9 +33,27 @@ const DashboardSidebar = ({userType,activeTab,onTabChange,}: DashboardSidebarPro
       <SidebarTrigger className="m-2 self-end" />
         <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>
-            {userType === "influencer" ? "Influencer" : "Brand"} Dashboard
-          </SidebarGroupLabel>
+     <SidebarGroupLabel className="px-0 pt-8 pb-6">
+  <div className="flex items-center gap-2">
+
+    <div className={`w-9 h-9 flex items-center justify-center rounded-lg ${
+      userType === "brand" ? "bg-blue-100" : "bg-purple-100"
+    }`}>
+      {userType === "brand" ? (
+        <LayoutDashboard className="w-5 h-5 text-blue-600" />
+      ) : (
+        <Users className="w-5 h-5 text-purple-600" />
+      )}
+    </div>
+
+    {!isCollapsed && (
+      <span className="text-lg font-semibold whitespace-nowrap">
+        {userType === "brand" ? "Brand Dashboard" : "Influencer Dashboard"}
+      </span>
+    )}
+
+  </div>
+</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

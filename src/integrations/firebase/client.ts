@@ -4,13 +4,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB7kbf2UXorH7go11lwhxsAhE2P8xqDQRc",
-  authDomain: "collaboration-c6c47.firebaseapp.com",
-  databaseURL: "https://collaboration-c6c47-default-rtdb.firebaseio.com",
-  projectId: "collaboration-c6c47",
-  storageBucket: "collaboration-c6c47.firebasestorage.app",
-  messagingSenderId: "600883996550",
-  appId: "1:600883996550:web:39422fde54901bfd75ee07"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
